@@ -1,0 +1,13 @@
+toastr.success("{{ Session::get('success') }}");
+
+
+
+<script>
+    @if(Session::has('success'))
+        iziToast.success({
+             message: "{{ Session::get('success') }}",
+            position: 'topRight'
+        })
+        {{ session()->forget('success') }}
+    @endif
+    </script>

@@ -1,0 +1,11 @@
+@foreach ($cases as $case)
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $case->company_name }}</td>
+                            <td>{{ $case->company_address }}</td>
+                            <td>{{ $case->case_number }}</td>
+                            <td>{{ $case->status }}</td>
+                            <td>{{ $case->created_at }}</td>
+                            <td>{{ $case->status }}</td>
+                        </tr>
+                    @endforeach
